@@ -1,0 +1,19 @@
+cod= int(input())
+
+r=cod//1000
+#1 цыфра
+
+t=cod//100
+_,g=divmod(t,10)
+#2 цыфра
+
+_,j=divmod(cod,100)
+k=j//10
+#3 цыфра
+
+i=cod%10
+#4 цыфра
+
+
+print(r,g,k,i)
+print(i,k,g,r)
