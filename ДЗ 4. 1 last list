@@ -1,0 +1,4 @@
+lst = list(input())
+print(lst)
+l_1 = (lst [-1:]) + (lst [0:-1])
+print(l_1)
