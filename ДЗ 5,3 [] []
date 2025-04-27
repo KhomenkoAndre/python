@@ -1,0 +1,7 @@
+lst = list(input())
+a,_ = divmod(len(lst), 2)
+
+if _ != 0:
+    print((lst[0:(a+1)]), (lst[(a+1):]))
+else:
+    print((lst[0:(a)]), (lst[(a):]))
