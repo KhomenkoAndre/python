@@ -1,0 +1,7 @@
+import random
+
+list = [random.randint(1, 100) for i in range (0, (random.randint(3, 10)))] 
+print(list)
+new_list = list[0:3:2]
+new_list.append (list[-2])
+print (new_list)
