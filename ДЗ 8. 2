@@ -1,0 +1,11 @@
+list = [0, 1, 2, 3, 4, 5]
+new_list =[]
+
+if bool(list) == False: #Ставлю проверку на пустой список
+        new_list.append (0)
+        print (new_list) #вывожу 0 при пустом списке
+else:                   #задаю цикл если список не пустой
+    for i in (range(len(list))):
+        if i % 2 == 0 : #ставлю проверку на четный индекс
+            new_list.append(list[i])
+    print(sum(new_list) * list[-1] ) #вывожу результат уровнения
