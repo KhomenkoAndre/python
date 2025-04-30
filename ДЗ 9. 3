@@ -1,0 +1,9 @@
+list = [0,5, 0, 6, 12]
+list_2 = list.copy()    # делаю копию списка для проверки for in
+
+for i in range(len(list_2)):
+    if list_2[i] == 0:
+        list.append(list_2[i])
+        list.remove(list_2[i])
+
+print(list)
