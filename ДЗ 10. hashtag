@@ -1,0 +1,10 @@
+from string import punctuation
+my_string = input('')
+result = ('')
+hashtag = ("#")
+for char in my_string:
+    if not char in punctuation:
+        result += char
+        result = result.replace(" ", "")
+result = hashtag + result
+print (result)
