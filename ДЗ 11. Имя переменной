@@ -4,7 +4,6 @@ my_string = input('')
 res = my_string.count('_') #Считает нижние подчеркивания
 x = ('_') #Исключение в один знак из пунктуации
 
-char = True
 for char in my_string: #Проверка на то что бы строка не была в пунктуации.
     if not char in punctuation or char == '_':
         char = True
