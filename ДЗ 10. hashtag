@@ -1,10 +1,10 @@
 from string import punctuation
-my_string = input('')
-result = ('')
+my_string = input()
+my_string_2 = ''.join ([i for i in my_string if i not in punctuation]).split()
+my_string = ''.join([i.title() for i in my_string_2])
 hashtag = ("#")
-for char in my_string:
-    if not char in punctuation:
-        result += char
-        result = result.replace(" ", "")
-result = hashtag + result
-print (result)
+result = hashtag + my_string
+if len(my_string) <= 139:
+    print(result)
+else:
+    print(result[:139])
