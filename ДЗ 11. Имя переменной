@@ -3,16 +3,15 @@ import keyword
 my_string = input('')
 res = my_string.count('_') #Считает нижние подчеркивания
 x = ('_') #Исключение в один знак из пунктуации
-#Проверка на то что бы строка не была в пунктуации.
+
 char = True
-for char in my_string:
+for char in my_string: #Проверка на то что бы строка не была в пунктуации.
     if not char in punctuation or char == '_':
         char = True
         continue
-#Проверка на: True в проверке пунктуации, маленькие буквы,цифру в начале строке, наличие только цифр в строке
-# отсутствие зарегистрированых слов, колличество подчеркиваний или строка только '_'
-if (char == True and my_string.islower() and not my_string[0].isdigit()
-        and not my_string.isdigit() and not my_string in keyword.kwlist and res <2 or my_string == x) :
+
+if (char == True and my_string.islower() and not my_string[0].isdigit() # True в пунктуации, маленькие буквы, цифру в начале, только цифр в строке
+        and not my_string.isdigit() and not my_string in keyword.kwlist and res <2 or my_string == x) : # отсутствие зарег. слов, 2+ подчеркиваний или один '_'
     a = True
     print(a)
 else:
