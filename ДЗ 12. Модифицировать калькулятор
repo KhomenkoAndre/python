@@ -1,0 +1,28 @@
+while True:
+    number_1 = int(input("Enter first number: "))
+    action = input("Enter your action(+-/*): ")
+    number_2 = int(input("Enter second number: "))
+
+    if number_2 == 0 and action == "/":
+        number_2 = int(input("Dividing by 0 is not possible, please enter second number: "))
+
+    elif action == "/":
+        result = number_1 / number_2
+        print(result)
+
+    elif action == "+":
+        result = number_1 + number_2
+        print(result)
+
+    elif action == "-":
+        result = number_1 - number_2
+        print(result)
+
+    elif action == "*":
+        result = number_1 * number_2
+        print(result)
+    ask = input('you want continue? (y/n)' )
+    if ask == 'y':
+        continue
+    else:
+        break
